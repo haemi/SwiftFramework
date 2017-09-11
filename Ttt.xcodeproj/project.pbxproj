@@ -8,12 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		F8E622321F66D6D6002D0E03 /* Ttt.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E622301F66D6D6002D0E03 /* Ttt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8E622581F66E360002D0E03 /* Something.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E622571F66E360002D0E03 /* Something.swift */; };
+		F8E622591F66E497002D0E03 /* Something.swift in Resources */ = {isa = PBXBuildFile; fileRef = F8E622571F66E360002D0E03 /* Something.swift */; };
+		F8E6225B1F66FFCA002D0E03 /* Categorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E6225A1F66FFCA002D0E03 /* Categorizer.swift */; };
+		F8E6225D1F66FFFA002D0E03 /* AnotherFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E6225C1F66FFFA002D0E03 /* AnotherFile.swift */; };
+		F8E6225F1F670001002D0E03 /* AndYetAnother.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E6225E1F670001002D0E03 /* AndYetAnother.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F8E6222D1F66D6D5002D0E03 /* Ttt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ttt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8E622301F66D6D6002D0E03 /* Ttt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ttt.h; sourceTree = "<group>"; };
 		F8E622311F66D6D6002D0E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8E622571F66E360002D0E03 /* Something.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Something.swift; sourceTree = "<group>"; };
+		F8E6225A1F66FFCA002D0E03 /* Categorizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Categorizer.swift; sourceTree = "<group>"; };
+		F8E6225C1F66FFFA002D0E03 /* AnotherFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnotherFile.swift; sourceTree = "<group>"; };
+		F8E6225E1F670001002D0E03 /* AndYetAnother.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AndYetAnother.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +57,10 @@
 			children = (
 				F8E622301F66D6D6002D0E03 /* Ttt.h */,
 				F8E622311F66D6D6002D0E03 /* Info.plist */,
+				F8E622571F66E360002D0E03 /* Something.swift */,
+				F8E6225A1F66FFCA002D0E03 /* Categorizer.swift */,
+				F8E6225C1F66FFFA002D0E03 /* AnotherFile.swift */,
+				F8E6225E1F670001002D0E03 /* AndYetAnother.swift */,
 			);
 			path = Ttt;
 			sourceTree = "<group>";
@@ -96,6 +109,7 @@
 					F8E6222C1F66D6D5002D0E03 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 5KX7SP58BM;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -122,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8E622591F66E497002D0E03 /* Something.swift in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8E6225F1F670001002D0E03 /* AndYetAnother.swift in Sources */,
+				F8E622581F66E360002D0E03 /* Something.swift in Sources */,
+				F8E6225B1F66FFCA002D0E03 /* Categorizer.swift in Sources */,
+				F8E6225D1F66FFFA002D0E03 /* AnotherFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +261,7 @@
 		F8E622361F66D6D6002D0E03 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5KX7SP58BM;
@@ -254,6 +274,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = at.arkulpa.ios.Ttt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -261,6 +282,7 @@
 		F8E622371F66D6D6002D0E03 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5KX7SP58BM;
@@ -296,6 +318,7 @@
 				F8E622371F66D6D6002D0E03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
